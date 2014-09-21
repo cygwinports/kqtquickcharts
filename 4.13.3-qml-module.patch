@@ -1,0 +1,11 @@
+--- origsrc/kqtquickcharts-4.13.3/src/CMakeLists.txt	2014-01-30 10:43:56.000000000 -0600
++++ src/kqtquickcharts-4.13.3/src/CMakeLists.txt	2014-09-21 17:37:02.514473000 -0500
+@@ -18,7 +18,7 @@ set(kqtquickcharts_SRCS
+     chartforegroundpainter.cpp
+     )
+ 
+-automoc4_add_library(kqtquickcharts SHARED ${kqtquickcharts_SRCS})
++automoc4_add_library(kqtquickcharts MODULE ${kqtquickcharts_SRCS})
+ target_link_libraries(kqtquickcharts ${KDE4_PLASMA_LIBS} ${QT_QTSCRIPT_LIBRARY} ${QT_QTDECLARATIVE_LIBRARY} ${KDECLARATIVE_LIBRARIES})
+ 
+ install(TARGETS kqtquickcharts DESTINATION ${IMPORTS_INSTALL_DIR}/org/kde/charts)

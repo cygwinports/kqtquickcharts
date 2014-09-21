@@ -1,0 +1,12 @@
+inherit kde4
+
+NAME="kqtquickcharts"
+VERSION=4.13.3
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="KDE interactive charts plugin"
+DESCRIPTION="kqtquickcharts is a QtQuick plugin for beautiful and interactive
+charts. It offers QML elements for line and bar charts to present numeric data
+from a model implementing the interface of QAbstractTableModel."
+
+PATCH_URI="4.13.3-qml-module.patch"
